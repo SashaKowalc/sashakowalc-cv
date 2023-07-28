@@ -3,18 +3,31 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Higher';
-  src: url('../public/fonts/Higher.ttf');
-  font-weight: bold;
-  font-style: bold;
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-BlackItalic.ttf") format('truetype');
 }
 
-font.higher {
-  font-family: 'Higher', 'Noto Sans', sans-serif, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-family: 'Poppins', 'Noto Sans', sans-serif, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+h2 {
+  font-family: 'Poppins', 'Noto Sans', sans-serif, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+p {
+  font-family: 'Poppins', 'Noto Sans', sans-serif, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+span {
+  font-family: 'Poppins', 'Noto Sans', sans-serif, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
 }
 
 .font-link {
-  font-family: 'Noto Sans', sans-serif, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'Poppins', 'Noto Sans', sans-serif, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
 }
