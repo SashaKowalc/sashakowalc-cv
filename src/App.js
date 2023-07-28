@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Header from './components/Header/Header';
+import Themes from './components/Theme/Themes';
+import { ThemeProvider } from 'styled-components';
+
 
 function App() {
+
+  const [ theme, setTheme ] = useState("light");
+
+  const [ lenguage, setLenguage ] = useState("spanish");
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body className='flex justify-center items-center w-screen font-link'>
+    <ThemeProvider theme={Themes[theme]}>
+      <Header theme={ theme } setTheme= { setTheme }></Header>
+
+    </ThemeProvider>
+    </body>
   );
 }
 
