@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Themes from './components/Theme/Themes';
 import Profile from './components/Profile/Profile';
+import Description from './components/Descrition/Description';
 import { ThemeProvider } from 'styled-components';
 
 
@@ -16,12 +17,9 @@ function App() {
 
   return (
     <ThemeProvider theme={Themes[theme]}>
-      {/* <body className='flex justify-center items-center w-screen font-link' lenguage={lenguage["spanish"]}> */}
-        <Header theme={ theme } setTheme= { setTheme }></Header>
-        {/* <main className=' w-1/2 font-link'> */}
-        <Profile theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }></Profile>
-        {/* </main>
-      </body> */}
+      <Header theme={ theme } setTheme= { setTheme }></Header>
+      <Profile theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }></Profile>
+      <Description theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }></Description>
     </ThemeProvider>
   );
 }

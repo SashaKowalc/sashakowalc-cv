@@ -5,28 +5,37 @@ export const ProfileContainer = styled.div `
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 100%;
-
+  width: 50%;
+  background: ${ ( { theme } ) => theme.bgc };
 `
 
 export const NameWrapper = styled.div `
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
 
   h1 {
     display: flex;
-    font-size: 3rem;
-
+    font-size: 40px;
+    max-width: 350px;
+    color: ${ ( { theme } ) => theme.text };
   }
 
-
+  h2 {
+    display: flex;
+    font-size: 20px;
+    max-width: 290px;
+    color: ${ ( { theme } ) => theme.text };
+  }
 `
 
 export const CardProfileWrapper = styled.div `
   display: flex;
-`
 
-export const CardProfile = styled.div `
-  display: flex;
+  img {
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    border:10px solid ${ ( { theme } ) => theme.btnbgn };
+  }
 `

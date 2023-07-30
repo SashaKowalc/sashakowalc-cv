@@ -4,16 +4,16 @@ const LightTheme = {
   hover: "#043263",
   bgc: "#E0E5EB",
   btnbgn: "#043263",
-  btnhover: "#084B92"
+  btnhover: "#084B92",
 };
 
 const DarkTheme = {
-  text: "#FDE916",
-  btntext: "#000",
-  hover: "#FDE916",
-  bgc: "#000",
-  btnbgn: "#FDE916",
-  btnhover: "#FFEF4C"
+  text: "#D5D5D5",
+  btntext: "#043263",
+  hover: "#D5D5D5",
+  bgc: "#043263",
+  btnbgn: "#D5D5D5",
+  btnhover: "#E0E5EB",
 };
 
 const Themes = {
