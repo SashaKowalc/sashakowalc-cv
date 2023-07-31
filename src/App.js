@@ -4,6 +4,8 @@ import Header from './components/Header/Header';
 import Themes from './components/Theme/Themes';
 import Profile from './components/Profile/Profile';
 import Description from './components/Descrition/Description';
+import Details from './components/Details/Details';
+import videoBg from './assets/videos/video.mp4';
 import { ThemeProvider } from 'styled-components';
 
 
@@ -16,11 +18,21 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <ThemeProvider theme={Themes[theme]}>
-      <Header theme={ theme } setTheme= { setTheme }></Header>
-      <Profile theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }></Profile>
-      <Description theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }></Description>
-    </ThemeProvider>
+    <>
+      <div>
+        <video autoPlay loop muted>
+          <source src={videoBg} type='video/mp4' />
+        </video>
+      </div>
+      <div className='content'>
+        <ThemeProvider theme={Themes[theme]}>
+          <Header theme={ theme } setTheme= { setTheme }/>
+          <Profile theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }/>
+          <Description theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }/>
+          <Details theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }/>
+        </ThemeProvider>
+      </div>  
+    </>
   );
 }
 

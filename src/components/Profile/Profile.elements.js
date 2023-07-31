@@ -16,15 +16,15 @@ export const NameWrapper = styled.div `
 
   h1 {
     display: flex;
-    font-size: 40px;
+    font-size: 45px;
     max-width: 350px;
     color: ${ ( { theme } ) => theme.text };
   }
 
   h2 {
     display: flex;
-    font-size: 20px;
-    max-width: 290px;
+    font-size: 25px;
+    max-width: 360px;
     color: ${ ( { theme } ) => theme.text };
   }
 `
