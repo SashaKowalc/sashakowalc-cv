@@ -7,31 +7,164 @@
   src: url("./assets/fonts/Poppins-BlackItalic.ttf") format('truetype');
 }
 
-h1 {
-  font-family: 'Poppins', 'Noto Sans', sans-serif, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
-}
-
-h2 {
-  font-family: 'Poppins', 'Noto Sans', sans-serif, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
-}
-
-p {
-  font-family: 'Poppins', 'Noto Sans', sans-serif, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
-}
-
-span {
-  font-family: 'Poppins', 'Noto Sans', sans-serif, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
-}
-
-.font-link {
+* {
   font-family: 'Poppins', 'Noto Sans', sans-serif, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
 }
 
 body {
   background: #526A82;
+  overflow: hidden;
+}
+
+.skill {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.progressBar {
+  background: #959595;
+  width: 600px;
+  height: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.progressBar div {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.progressBar div span {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #FFF;
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.html {
+  background: #e74d3c;
+  animation: html 1s linear forwards;
+  -webkit-animation: html 1s linear forwards;
+}
+
+.css {
+  background: #cddc39;
+  animation: css 1s linear forwards;
+  -webkit-animation: css 1s linear ;
+}
+
+.apis {
+  background: #00bcd4;
+  animation: apis 1s linear forwards;
+}
+
+.js {
+  background: #f1c40e;
+  animation: js 1s linear forwards;
+}
+
+.mysql {
+  background: #9b58b6;
+  animation: mysql 1s linear forwards;
+}
+
+.php {
+  background: #3398db;
+  animation: php 1s linear forwards;
+}
+
+.react {
+  background: #1abc9c;
+  animation: react 1s linear forwards;
+}
+
+.html span {
+  border: 1px solid #e74d3c;
+}
+
+.css span {
+  border: 1px solid #cddc39;
+}
+
+.apis span {
+  border: 1px solid #00bcd4;
+}
+
+.js span {
+  border: 1px solid #f1c40e;
+}
+
+.mysql span {
+  border: 1px solid #9b58b6;
+}
+
+.php span {
+  border: 1px solid #3398db;
+}
+
+.react span {
+  border: 1px solid #1abc9c;
+}
+
+@keyframes html {
+  100%{
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes apis {
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes js {
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes mysql {
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes php {
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes react {
+  100% {
+    width: 60%;
+  }
 }

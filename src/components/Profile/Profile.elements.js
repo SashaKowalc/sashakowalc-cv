@@ -33,8 +33,8 @@ export const CardProfileWrapper = styled.div `
   display: flex;
 
   img {
-    width:300px;
-    height:300px;
+    width:240px;
+    height:240px;
     border-radius: 50%;
     border:10px solid ${ ( { theme } ) => theme.btnbgn };
   }
