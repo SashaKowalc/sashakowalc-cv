@@ -1,25 +1,25 @@
 import React from 'react';
 import { 
-  DetailsContainer,
-  DetailsWrapper
-} from './Details.elements';
+  SkillsContainer,
+  SkillsWrapper
+} from './Skills.elements';
 
 function Details(props) {
 
   let tittle = props.lenguage === 'spanish' ? <summary>HABILIDADES</summary> : <summary>SKILLS</summary>
 
   return (
-    <DetailsContainer>
+    <SkillsContainer>
       <details>
         { tittle }
-          <DetailsWrapper>
+          <SkillsWrapper>
             <h2 className='skill'>HTML 5</h2>
             <div className='progressBar'>
               <div className='html'><span>90%</span></div>
             </div>
-            <h2 className='skill'>CSS 3 / Tailwind</h2>
+            <h2 className='skill'>CSS</h2>
             <div className='progressBar'>
-              <div className='css'><span>90%</span></div>
+              <div className='css'><span>80%</span></div>
             </div>
             <h2 className='skill'>APIs</h2>
             <div className='progressBar'>
@@ -28,22 +28,22 @@ function Details(props) {
             <h2 className='skill'>JavaScript</h2>
             <div className='progressBar'>
               <div className='js'><span>85%</span></div>
-            <h2 className='skill'>MySQL</h2>
+            </div>
+            <h2 className='skill'>SQL</h2>
             <div className='progressBar'>
               <div className='mysql'><span>75%</span></div>
             </div>
-            <h2 className='skill'>PHP</h2>
+            <h2 className='skill'>.NET</h2>
             <div className='progressBar'>
-              <div className='php'><span>70%</span></div>
-            </div>
+              <div className='net'><span>40%</span></div>
             </div>
             <h2 className='skill'>React</h2>
             <div className='progressBar'>
-              <div className='react'><span>60%</span></div>
+              <div className='react'><span>70%</span></div>
             </div>
-          </DetailsWrapper>
+          </SkillsWrapper>
       </details>
-    </DetailsContainer>
+    </SkillsContainer>
   );
 };
 

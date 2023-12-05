@@ -16,16 +16,20 @@ export const NameWrapper = styled.div `
 
   h1 {
     display: flex;
-    font-size: 45px;
+    font-size: 22px;
     max-width: 350px;
     color: ${ ( { theme } ) => theme.text };
+    position: relative;
+    right: 25px;
   }
 
   h2 {
     display: flex;
-    font-size: 25px;
+    font-size: 12px;
     max-width: 360px;
     color: ${ ( { theme } ) => theme.text };
+    position: relative;
+    right: 25px;
   }
 `
 
@@ -33,9 +37,9 @@ export const CardProfileWrapper = styled.div `
   display: flex;
 
   img {
-    width:240px;
-    height:240px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border:10px solid ${ ( { theme } ) => theme.btnbgn };
+    border:5px solid ${ ( { theme } ) => theme.btnbgn };
   }
 `

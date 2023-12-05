@@ -15,7 +15,7 @@ function Profile(props) {
     <>
       <ProfileContainer>
         <NameWrapper>
-          <h1 className="font.link">Sasha Nahuel Kowalczuk</h1>
+          <h1 className="font.link">SASHA NAHUEL KOWALCZUK</h1>
           { profession }
         </NameWrapper>
         <CardProfileWrapper>
