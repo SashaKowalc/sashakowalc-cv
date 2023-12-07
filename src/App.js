@@ -8,6 +8,7 @@ import Skills from './components/Skills/Skills';
 import Education from './components/Education/Education';
 import Work from './components/Work/Work'
 import Porfolio from './components/Porfolio/Porfolio';
+import Footer from './components/Footer/Footer';
 import videoBg from './assets/videos/video.mp4';
 import { ThemeProvider } from 'styled-components';
 
@@ -36,6 +37,7 @@ function App() {
           <Education theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }/>
           <Work theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }/>
           <Porfolio theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }/>
+          <Footer theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }/>
         </ThemeProvider>
       </div>  
     </>

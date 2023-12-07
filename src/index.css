@@ -18,7 +18,7 @@ body {
 }
 
 .skill {
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: 1px;
   margin-bottom: 5px;
 }
@@ -48,7 +48,7 @@ body {
 .progressBar div span {
   height: 15px;
   width: 30px;
-  font-size: 6px;
+  font-size: 9px;
   border-radius: 50%;
   background: #E0E5EB;
   float: right;

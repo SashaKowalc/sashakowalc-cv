@@ -6,11 +6,12 @@ export const WorkContainer = styled.div `
   align-items: center;
   margin: auto;
   width: 50%;
+  padding: 10px 0px 10px 0px;
   background: ${ ( { theme } ) => theme.bgc };
 
   summary {
     color: ${ ( { theme } ) => theme.text};
-    font-size: 12px;
+    font-size: 17px;
     font-weight: 800px;
     margin: 5px 0px 0px 60px;
     cursor: pointer;
@@ -23,7 +24,7 @@ export const WorkWrapper = styled.div `
   justify-content: center;
   padding: 0px 0px 0px 60px;
 
-  ul{
+  ul.timeline {
     border-left: 4px solid #4557bb;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
@@ -32,21 +33,21 @@ export const WorkWrapper = styled.div `
     letter-spacing: 0.5px;
     position: relative;
     line-height: 1.4em;
-    font-size: 10px;
+    font-size: 14px;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
     left: 150px;
   };
 
-  ul li {
+  ul.timeline li.event {
     border-bottom: 1px dashed ${ ( { theme } ) => theme.text };
     padding-bottom: 5px;
     margin-bottom: 10px;
     position: relative;
   };
 
-  ul li::after {
+  ul.timeline li.event::after {
     box-shadow: 0 0 0 4px ${ ( { theme } ) => theme.text };
     left: -23px;
     background: ${ ( { theme } ) => theme.bgc };
@@ -57,7 +58,7 @@ export const WorkWrapper = styled.div `
     content: "";
   };
 
-  ul li::before {
+  ul.timeline li.event::before {
     left: -160px;
     text-align: right;
     font-weight: 100;
@@ -66,34 +67,35 @@ export const WorkWrapper = styled.div `
     color: ${ ( { theme } ) => theme.text };
   };
 
-  ul li::before, ul li::after {
+  ul.timeline li.event::before, ul li.event::after {
     position: absolute;
     display: block;
     top: 0;
+    font-size: 11px;
   };
 
-  ul li:last-of-type {
+  ul.timeline li.event:last-of-type {
     padding-bottom: 0;
     margin-bottom: 0;
     border: none;
   };
 
-  ul li h3 {
+  ul.timeline li.event h3 {
     display: flex;
-    font-size: 12px;
+    font-size: 14px;
     color: ${ ( { theme } ) => theme.text };
   };
 
-  ul li p {
+  ul.timeline li.event p {
     display: flex;
-    font-size: 8px;
+    font-size: 11px;
     color: ${ ( { theme } ) => theme.text };
     max-width: 450px;
   };
 
-  ul li h4 {
+  ul.timeline li.event h4 {
     display: flex;
-    font-size: 10px;
+    font-size: 12px;
     color: ${ ( { theme } ) => theme.text };
   };
 `

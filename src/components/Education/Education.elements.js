@@ -7,10 +7,11 @@ export const EducationContainer = styled.div `
   margin: auto;
   width: 50%;
   background: ${ ( { theme } ) => theme.bgc };
+  padding: 10px 0px 10px 0px;
 
   summary {
     color: ${ ( { theme } ) => theme.text};
-    font-size: 12px;
+    font-size: 17px;
     font-weight: 800px;
     margin: 5px 0px 0px 60px;
     cursor: pointer;
@@ -32,7 +33,7 @@ export const EducationWrapper= styled.div `
     letter-spacing: 0.5px;
     position: relative;
     line-height: 1.4em;
-    font-size: 10px;
+    font-size: 14px;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
@@ -70,6 +71,7 @@ export const EducationWrapper= styled.div `
     position: absolute;
     display: block;
     top: 0;
+    font-size: 11px;
   };
 
   ul li:last-of-type {
@@ -80,19 +82,19 @@ export const EducationWrapper= styled.div `
 
   ul li h3 {
     display: flex;
-    font-size: 12px;
+    font-size: 14px;
     color: ${ ( { theme } ) => theme.text };
   };
 
   ul li p {
     display: flex;
-    font-size: 8px;
+    font-size: 11px;
     color: ${ ( { theme } ) => theme.text };
   };
 
   ul li h4 {
     display: flex;
-    font-size: 10px;
+    font-size: 12px;
     color: ${ ( { theme } ) => theme.text };
   };
 `

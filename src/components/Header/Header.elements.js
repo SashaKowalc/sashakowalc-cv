@@ -6,7 +6,7 @@ export const HeaderContainer = styled.div `
   align-items: center;
   margin: auto;
   width: 50%;
-  height: 35px;
+  height: 46px;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   background: ${ ( { theme } ) => theme.bgc };
@@ -26,7 +26,7 @@ export const ButtonLenguage = styled.button `
   position: relative;
   padding: 10px 20px;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1;
   color: ${ ( { theme } ) => theme.btntext };
   background: none;
@@ -120,8 +120,8 @@ export const HeaderWrapperDarkMode = styled.div `
 export const SwitchBgc = styled.div `
   display: flex;
   position: relative;
-  width: 52px;
-  height: 22px;
+  width: 40px;
+  height: 28px;
   border-radius: 24px;
   background: ${ ( { theme } ) => theme.btnbgn };
   transition: 0.5s all ease-in;
@@ -130,7 +130,7 @@ export const SwitchBgc = styled.div `
     position: absolute;
     top: 1px;
     left: 65px;
-    font-size: 18px;
+    font-size: 24px;
     color: ${ ( { theme } ) => theme.text };
   }
 `
@@ -139,9 +139,9 @@ export const SwitchDarkMode = styled.button `
   position: absolute;
   cursor: pointer;
   bottom: 4px;
-  left: ${({position}) => position ? '32px' : '7px'};
-	width: 14px;
-	height: 14px;
+  left: ${({position}) => position ? '10px' : '7px'};
+	width: 20px;
+	height: 20px;
 	background: ${ ( { theme } ) => theme.btntext };
   border: none;
 	border-radius: 50%;

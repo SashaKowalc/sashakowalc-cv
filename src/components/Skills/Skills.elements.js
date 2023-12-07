@@ -10,7 +10,7 @@ export const SkillsContainer = styled.div `
 
   summary {
     color: ${ ( { theme } ) => theme.text};
-    font-size: 12px;
+    font-size: 17px;
     font-weight: 800px;
     margin: 5px 0px 0px 60px;
     cursor: pointer;

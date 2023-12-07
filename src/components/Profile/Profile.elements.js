@@ -16,7 +16,7 @@ export const NameWrapper = styled.div `
 
   h1 {
     display: flex;
-    font-size: 22px;
+    font-size: 30px;
     max-width: 350px;
     color: ${ ( { theme } ) => theme.text };
     position: relative;
@@ -25,7 +25,7 @@ export const NameWrapper = styled.div `
 
   h2 {
     display: flex;
-    font-size: 12px;
+    font-size: 17px;
     max-width: 360px;
     color: ${ ( { theme } ) => theme.text };
     position: relative;
@@ -37,9 +37,9 @@ export const CardProfileWrapper = styled.div `
   display: flex;
 
   img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border:5px solid ${ ( { theme } ) => theme.btnbgn };
+    border: 8px solid ${ ( { theme } ) => theme.btnbgn };
   }
 `

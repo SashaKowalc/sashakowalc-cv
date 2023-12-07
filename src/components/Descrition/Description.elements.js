@@ -10,7 +10,7 @@ export const DescriptionContainer = styled.div `
 
   h1 {
     display: flex;
-    font-size: 15px;
+    font-size: 21px;
     max-width: 200px;
     color: ${ ( { theme } ) => theme.text };
     padding: 0px 0px 0px 60px;
@@ -18,7 +18,7 @@ export const DescriptionContainer = styled.div `
 
   h3 {
     display: flex;
-    font-size: 10px;
+    font-size: 14px;
     padding: 0px 70px 0px 60px;
     font-weight: bold;
     color: ${ ( { theme } ) => theme.text };
