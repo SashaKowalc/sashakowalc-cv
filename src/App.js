@@ -19,8 +19,6 @@ function App() {
 
   const [ lenguage, setLenguage ] = useState("spanish");
 
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <>
       <div className='video'>
@@ -30,7 +28,7 @@ function App() {
       </div>
       <div className='content'>
         <ThemeProvider theme={Themes[theme]}>
-          <Header theme={ theme } setTheme= { setTheme }/>
+          <Header theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }/>
           <Profile theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }/>
           <Description theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }/>
           <Skills theme={ theme } setTheme= { setTheme } lenguage={ lenguage } setLenguage={ setLenguage }/>

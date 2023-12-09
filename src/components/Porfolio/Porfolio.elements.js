@@ -6,7 +6,7 @@ export const PorfolioContainer = styled.div `
   align-items: center;
   margin: auto;
   width: 50%;
-  padding: 10px 0px 10px 0px;
+  padding: 5px 0px 5px 0px;
   background: ${ ( { theme } ) => theme.bgc };
 
   summary {
@@ -15,6 +15,20 @@ export const PorfolioContainer = styled.div `
     font-weight: 800px;
     margin: 5px 0px 0px 60px;
     cursor: pointer;
+  }
+
+  @media (max-width: 769px) {
+    summary {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 426px) {
+    summary {
+      font-size: 13px;
+      margin: auto;
+      padding: 0px 0px 0px 15px;
+    }
   }
 `
 
@@ -37,21 +51,22 @@ export const PorfolioWrapper = styled.div `
 
   article {
     display: flex;
-    width: 150px;
-    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
     flex-direction: column;
     align-items: center;
-    background: #FFF;
+    background: ${ ( { theme } ) => theme.text };;
   };
 
   article:hover {
-    box-shadow: 0px 0px 10px 0px ${ ( { theme } ) => theme.text};
+    box-shadow: 0px 0px 20px 0px ${ ( { theme } ) => theme.text};
     cursor: pointer;
   };
 
   img { 
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 190px;
     object-fit: cover;
     border-radius: 10px;
     margin: 2px 0px;
@@ -59,7 +74,7 @@ export const PorfolioWrapper = styled.div `
 
   .product-description {
     display: flex;
-    border-top: 1px solid ${ ( { theme } ) => theme.text};
+    border-top: 1px solid ${ ( { theme } ) => theme.bgc};
     flex-direction: column;
     align-items: center;
     margin: 5px 5px;
@@ -68,13 +83,13 @@ export const PorfolioWrapper = styled.div `
   h2 {
     display: flex;
     font-size: 14px;
-    color: ${ ( { theme } ) => theme.text };
+    color: ${ ( { theme } ) => theme.bgc };
   };
 
   p {
     display: flex;
     font-size: 12px;
-    color: ${ ( { theme } ) => theme.text };
+    color: ${ ( { theme } ) => theme.bgc };
   };
 
   

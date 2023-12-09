@@ -7,9 +7,17 @@ export const HeaderContainer = styled.div `
   margin: auto;
   width: 50%;
   height: 46px;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   background: ${ ( { theme } ) => theme.bgc };
+  padding: 5px 0px 5px 0px;
+
+  @media (max-width: 426px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+  }
 `
 
 // ------ LENGUAGE BUTTON ------
@@ -19,6 +27,10 @@ export const HeaderWrapperLenguage = styled.div `
   align-items: center;
   width: 100%;
   margin: auto;
+
+  @media (max-width: 768px) {
+    margin: 5px 0px 5px 0px;
+  }
 `
 
 export const ButtonLenguage = styled.button `
@@ -62,7 +74,7 @@ export const ButtonLenguage = styled.button `
   }
 
   span:first-child {
-  padding-right: 7px;
+    padding-right: 7px;
   }
 
   span {
@@ -107,6 +119,10 @@ export const ButtonLenguage = styled.button `
   &:hover ul li p {
     transform: translateY(0);
   }
+
+  @media (max-width: 426px) {
+    font-size: 10px;
+  }
 `
 
 // ------ DARK MODE ------
@@ -133,13 +149,28 @@ export const SwitchBgc = styled.div `
     font-size: 24px;
     color: ${ ( { theme } ) => theme.text };
   }
+
+  @media (max-width: 769px) {
+    svg {
+      left: 48px;
+    }
+  }
+
+  @media (max-width: 426px) {
+    height: 20px;
+
+    svg {
+      left: 48px;
+      font-size: 18px;
+    }
+  }
 `
 
 export const SwitchDarkMode = styled.button `
   position: absolute;
   cursor: pointer;
   bottom: 4px;
-  left: ${({position}) => position ? '10px' : '7px'};
+  left: ${({position}) => position ? '15px' : '7px'};
 	width: 20px;
 	height: 20px;
 	background: ${ ( { theme } ) => theme.btntext };
@@ -147,4 +178,10 @@ export const SwitchDarkMode = styled.button `
 	border-radius: 50%;
   transition: 0.5s all ease-in;
   outline: none;
+
+  @media (max-width: 426px) {
+    width: 13px;
+    height: 13px;
+    left: ${({position}) => position ? '22px' : '6px'};
+  }
 `

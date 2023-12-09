@@ -6,7 +6,7 @@ export const WorkContainer = styled.div `
   align-items: center;
   margin: auto;
   width: 50%;
-  padding: 10px 0px 10px 0px;
+  padding: 5px 0px 5px 0px;
   background: ${ ( { theme } ) => theme.bgc };
 
   summary {
@@ -15,6 +15,20 @@ export const WorkContainer = styled.div `
     font-weight: 800px;
     margin: 5px 0px 0px 60px;
     cursor: pointer;
+  }
+
+  @media (max-width: 769px) {
+    summary {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 426px) {
+    summary {
+      font-size: 13px;
+      margin: auto;
+      padding: 0px 0px 0px 15px;
+    }
   }
 `
 
@@ -98,4 +112,33 @@ export const WorkWrapper = styled.div `
     font-size: 12px;
     color: ${ ( { theme } ) => theme.text };
   };
+
+  @media (max-width: 1025px) {
+    padding: 0px;
+    width: 350px;
+  }
+
+  @media (max-width: 769px) {
+    width: 230px;
+
+    ul.timeline {
+      font-size: 11px;
+    }
+
+    ul.timeline li.event::before, ul li.event::after {
+      font-size: 9px;
+    }
+
+    ul.timeline li.event h3 {
+      font-size: 11px;
+    };
+
+    ul.timeline li.event p {
+      font-size: 9px;
+    };
+
+    ul.timeline li.event h4 {
+      font-size: 10px;
+    };
+  }
 `

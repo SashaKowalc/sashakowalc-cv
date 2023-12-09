@@ -9,7 +9,7 @@ import { MdLinearScale } from "react-icons/md";
 
 function Footer (props) {
 
-  let title = props.lenguage === 'spanish' ? <p className='consult-title'>¿Tienes preguntas o simplemente quieres saludar? ¡No dudes en ponerte en contacto! Tu consulta es importante, y estoy aquí para responder rápidamente. ¡Envía un correo o un mensaje de WhatsApp y conversemos pronto!</p> : <h3>Do you have questions or just want to say hello? Don't hesitate to get in touch! Your inquiry is important, and I'm here to respond quickly - send me an email or WhatsApp message and let's chat soon!</h3>;
+  let title = props.lenguage === 'spanish' ? <p className='consult-title'>¿Tienes preguntas o simplemente quieres saludar? ¡No dudes en ponerte en contacto! Tu consulta es importante, y estoy aquí para responder rápidamente. ¡Envía un correo o un mensaje de WhatsApp y conversemos pronto!</p> : <p className='consult-title'>Do you have questions or just want to say hello? Don't hesitate to get in touch! Your inquiry is important, and I'm here to respond quickly - send me an email or WhatsApp message and let's chat soon!</p>;
   let name = props.lenguage === 'spanish' ? <label for="nombre" className="lbl-text">NOMBRE</label> : <label for="nombre" className="lbl-text">NAME</label>;
   let message = props.lenguage === 'spanish' ? <label for="mensaje" className="lbl-msj">TU MENSAJE</label> : <label for="mensaje" className="lbl-msj">YOUR MESSAGE</label>;
   let button = props.lenguage === 'spanish' ? <button type="submit">ENVIAR</button> : <button type="submit">SEND</button>;

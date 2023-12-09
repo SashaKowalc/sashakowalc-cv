@@ -8,6 +8,8 @@ export const FooterContainer = styled.div `
   width: 50%;
   background: ${ ( { theme } ) => theme.bgc };
   padding: 5px 0px 5px 0px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 `
 
 export const FooterWrapper = styled.div `
@@ -215,5 +217,69 @@ export const FooterWrapper = styled.div `
   svg {
     color: ${ ( { theme } ) => theme.text };
     font-size: 35px;
+  }
+
+  @media (max-width: 426px) {
+    p.consult-title {
+      font-size: 11px;
+      margin: auto;
+    }
+
+    p.consult-subtitle {
+      font-size: 11px;
+      margin: auto;
+    }
+
+    form {
+      width: 200%;
+    }
+
+    div.form-container {
+      flex-direction: column;
+    }
+
+    div.input-container {
+      width: 100%;
+      margin: 10px 0px 10px 10px;
+    }
+
+    button {
+      font-size: 12px;
+      width: 50%;
+    }
+
+    div.msj-container {
+      margin: 0px 0px 0px 10px;
+    }
+
+    textarea {
+      font-size: 11px;
+    }
+
+    div.socialMedia-line {
+      padding: 0px 2px 0px 2px;
+    }
+
+    div.socialMedia {
+      padding: 0px 2px 0px 2px;
+    }
+
+    svg {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 376px) {
+    div.socialMedia-line {
+      padding: 0px;
+    }
+
+    div.socialMedia {
+      padding: 0px;
+    }
+
+    svg {
+      font-size: 24px;
+    }
   }
 `

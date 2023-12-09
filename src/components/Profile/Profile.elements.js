@@ -7,6 +7,11 @@ export const ProfileContainer = styled.div `
   margin: auto;
   width: 50%;
   background: ${ ( { theme } ) => theme.bgc };
+  padding: 5px 0px 5px 0px;
+
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+  }
 `
 
 export const NameWrapper = styled.div `
@@ -31,6 +36,43 @@ export const NameWrapper = styled.div `
     position: relative;
     right: 25px;
   }
+
+  @media (max-width: 1024px) {
+    h1 {
+      position: relative;
+      right: 0px;
+      margin: auto;
+      max-width: 500px;
+    }
+
+    h2 {
+      position: relative;
+      right: 0px;
+      margin: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 426px) {
+    h1 {
+      font-size: 18px;
+      width: 150px;
+    }
+
+    h2{
+      font-size: 12px;
+      width: 150px;
+    }
+  }
 `
 
 export const CardProfileWrapper = styled.div `
@@ -42,4 +84,21 @@ export const CardProfileWrapper = styled.div `
     border-radius: 50%;
     border: 8px solid ${ ( { theme } ) => theme.btnbgn };
   }
+
+  @media (max-width: 768px) {
+    img{ 
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  @media (max-width: 426px) {
+    img {
+      width: 130px;
+      height: 130px;
+      border: 4px solid ${ ( { theme } ) => theme.btnbgn };
+    }
+  }
+
+
 `
