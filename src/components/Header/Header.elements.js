@@ -122,6 +122,7 @@ export const ButtonLenguage = styled.button `
 
   @media (max-width: 426px) {
     font-size: 10px;
+    padding: 5px 10px;
   }
 `
 

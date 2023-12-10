@@ -149,17 +149,17 @@ export const FooterWrapper = styled.div `
     margin: 0 0 15px 18px;
   }
 
-  textarea:focus::placeholder {
+  .description:focus::placeholder {
     opacity: 1;
   }
 
-  textarea {
+  .description {
     border: none;
     outline: none;
     resize: none;
     font-size: 12px;
     width: 90%;
-    height: 70px;
+    min-height: 3rem;
     background: none;
     border: 1px solid ${ ( { theme } ) => theme.text};
     border-radius: 4px;
@@ -172,8 +172,17 @@ export const FooterWrapper = styled.div `
     padding: 5px;
   }
 
-  textarea:focus {
+  .description:focus {
     border: 2px solid ${ ( { theme } ) => theme.text};
+  }
+
+  .description:empty::before {
+    position: absolute;
+    content: "";
+  }
+
+  #description {
+    display: none;
   }
 
   button {
@@ -219,7 +228,37 @@ export const FooterWrapper = styled.div `
     font-size: 35px;
   }
 
+  @media (max-width: 769px) {
+    div.consult {
+      width: 130%;
+    }
+
+    form {
+      width: 130%;
+    }
+
+    input.input-text {
+      width: 90%;
+    }
+
+    div.description {
+      width: 100%;
+    }
+
+    input.input-text:focus~span.barra::before{
+      width: 90%;
+    }
+
+    button {
+      width: 30%;
+    }
+  }
+
   @media (max-width: 426px) {
+    div.consult {
+      width: 190%;
+    }
+
     p.consult-title {
       font-size: 11px;
       margin: auto;
@@ -240,7 +279,15 @@ export const FooterWrapper = styled.div `
 
     div.input-container {
       width: 100%;
-      margin: 10px 0px 10px 10px;
+      margin: 10px 0px 10px 0px;
+    }
+
+    input.input-text {
+      width: 95%;
+    }
+
+    input.input-text:focus~span.barra::before{
+      width: 95%;
     }
 
     button {
@@ -249,11 +296,13 @@ export const FooterWrapper = styled.div `
     }
 
     div.msj-container {
-      margin: 0px 0px 0px 10px;
+      margin: -10px 0px 0px 0px;
     }
 
-    textarea {
+    .description {
       font-size: 11px;
+      width: 95%;
+      height: auto;
     }
 
     div.socialMedia-line {
@@ -270,6 +319,35 @@ export const FooterWrapper = styled.div `
   }
 
   @media (max-width: 376px) {
+    div.consult {
+      width: 252%;
+    }
+
+    form {
+      width: 250%;
+    }
+    
+    div.input-container {
+      width: 100%;
+      margin: 10px 0px 10px 0px;
+    }
+
+    input.input-text {
+      width: 100%;
+    }
+
+    input.input-text:focus~span.barra::before{
+      width: 100%;
+    }
+
+    .description {
+      width: 100%;
+    }
+
+    div.msj-container {
+      margin: -10px 0px 0px 0px;
+    }
+
     div.socialMedia-line {
       padding: 0px;
     }
@@ -281,5 +359,57 @@ export const FooterWrapper = styled.div `
     svg {
       font-size: 24px;
     }
-  }
+  };
+
+  @media (max-width: 321px) {
+    div.consult {
+      width: 420%;
+    }
+
+    p.consult-title {
+      font-size: 10px;
+      padding: 0px 10px;
+    }
+
+    p.consult-subtitle {
+      font-size: 10px;
+      padding: 0px 10px;
+      margin: -20px 0px 0px 0px;
+    }
+
+    form {
+      width: 350%;
+    }
+
+    input.input-text {
+      font-size: 9px;
+    }
+
+    label.lbl-text {
+      font-size: 10px;
+    }
+
+    input.input-text:focus~label.lbl-text,
+    input.input-text:valid~label.lbl-text {
+      top: -15px;
+      font-size: 9px;
+    }
+
+    label.lbl-msj {
+      font-size: 10px;
+    }
+    div.description {
+      font-size: 9px;
+    }
+
+    button {
+      font-size: 9px;
+      width: 60%;
+      margin-bottom: 0px;
+    }
+
+    svg {
+      font-size: 20px;
+    }
+  };
 `

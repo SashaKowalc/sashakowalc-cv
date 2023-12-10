@@ -92,5 +92,32 @@ export const PorfolioWrapper = styled.div `
     color: ${ ( { theme } ) => theme.bgc };
   };
 
-  
+  @media (max-width: 426px) {
+    padding: 0px;
+
+    article {
+      width: 100%;
+      height: 220px;
+    };
+
+    img { 
+      width: 120px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 2px 0px;
+    };
+
+    .product-description {
+      margin: 5px 5px;
+    };
+
+    h2 {
+      font-size: 12px;
+    };
+
+    p {
+      font-size: 10px;
+    };
+  };
 `

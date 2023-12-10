@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <div className='video'>
-        <video autoPlay loop muted>
+        <video autoPlay loop muted >
           <source src={videoBg} type='video/mp4' />
         </video>
       </div>

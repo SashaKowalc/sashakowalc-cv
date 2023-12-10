@@ -34,7 +34,9 @@ function Footer (props) {
               </div>
               <div className="msj-container">
                 { message } <br/>
-                <textarea className='description' name="mensaje"></textarea>
+                <div className='description' name="description" contentEditable oninput="document.querySelector('#description').textContent = this.innerText"></div>
+                <textarea id="description"></textarea>
+                {/* <textarea className='description' name="mensaje"></textarea> */}
               </div>
               { button }
             </div>

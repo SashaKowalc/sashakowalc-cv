@@ -15,21 +15,21 @@ export const EducationContainer = styled.div `
     font-weight: 800px;
     margin: 5px 0px 0px 60px;
     cursor: pointer;
-  }
+  };
+  
+  @media (max-width: 769px) {
+    summary {
+      font-size: 15px;
+    };
+  };
 
   @media (max-width: 426px) {
     summary {
       font-size: 13px;
       margin: auto;
       padding: 0px 0px 0px 15px;
-    }
-  }
-
-  @media (max-width: 769px) {
-    summary {
-      font-size: 15px;
-    }
-  }
+    };
+  };
 `
 
 export const EducationWrapper= styled.div `
@@ -139,5 +139,61 @@ export const EducationWrapper= styled.div `
     ul.timeline li.event h4 {
       font-size: 10px;
     };
-  }
+  };
+
+  @media (max-width: 426px) {
+    width: 210px;
+
+    ul.timeline {
+      font-size: 10px;
+      left: 8px;
+      width: 190px;
+    }
+
+    ul.timeline li.event::before, ul li.event::after {
+      font-size: 8px;
+      content: "";
+    }
+
+    ul.timeline li.event h3 {
+      font-size: 10px;
+    };
+
+    ul.timeline li.event p {
+      font-size: 8px;
+    };
+
+    ul.timeline li.event h4 {
+      font-size: 9px;
+    };
+  };
+
+  @media (max-width: 376px) {
+    width: 180px;
+
+    ul.timeline {
+      font-size: 9px;
+      width: 95%;
+    };
+
+    ul.timeline li.event::before, ul li.event::after {
+      font-size: 7px;
+    };
+
+    ul.timeline li.event h3 {
+      font-size: 9px;
+    };
+
+    ul.timeline li.event p {
+      font-size: 7px;
+    };
+
+    ul.timeline li.event h4 {
+      font-size: 8px;
+    };
+  };
+  
+  @media (max-width: 321px) {
+    width: 150px;
+  };
 `
